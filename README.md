@@ -57,8 +57,6 @@ Ensure you have the following installed on your system:
    cd DeviceSensor
    npm install
 
-
-
 ##Set up of environment files for server, web, and the simulator
 .env for server
 # MongoDB Connection URL for the Backend
@@ -81,11 +79,10 @@ UPDATE_INTERVAL=10000 # Update every 10 seconds
 CREATE_INTERVAL=30000  # Create new device every 30 seconds
 DELETE_INTERVAL=60000  # Delete a device every 60 seconds
 
-
 ##Use Docker Compose to build and start all containers:
 Docker.compose.yml is in the root folder which should be built.
 In bash
-         cd IoT_PROJECT(root folder)
+         cd DeviceSensor-main(root folder)
 docker compose up --build
        
 ##Access the Applications:
@@ -97,6 +94,10 @@ docker compose up --build
 In bash
        cd device-simulator
        node simulator.js
+
+
+
+
 
 
 
