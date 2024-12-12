@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "61fddc79-1d1a-424d-8305-7b109f81e0ea",
+		"name": "Device-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11444787"
+	},
+	"item": [
+		{
+			"name": "PostRequest-Create-Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"car\",\n    \"name\": \"Car-device\",\n    \"sensors\": [\n        {\n            \"name\": \"Battery Level\",\n            \"value\": \"90\"\n        },\n        {\n            \"name\": \"Fluid Levels\",\n            \"value\": \"49\"\n        },\n        {\n            \"name\": \"Engine Temperature\",\n            \"value\": \"37\"\n        },\n        {\n            \"name\": \"Tire Pressure\",\n            \"value\": \"28\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRequest-Update_Device",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"car\",\n    \"name\": \"Car-device\",\n    \"sensors\": [\n        {\n            \"name\": \"Battery Level\",\n            \"value\": \"40\"\n        },\n        {\n            \"name\": \"Fluid Levels\",\n            \"value\": \"49\"\n        },\n        {\n            \"name\": \"Engine Temperature\",\n            \"value\": \"37\"\n        },\n        {\n            \"name\": \"Tire Pressure\",\n            \"value\": \"28\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/devices/67592f6cd644fde326edcaa3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"devices",
+						"67592f6cd644fde326edcaa3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequest-Get-All_Devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequest-Get-DeviceByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/devices/67592f6cd644fde326edcaa3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"devices",
+						"67592f6cd644fde326edcaa3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRequest-Delete-Device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/devices/67592f6cd644fde326edcaa3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"devices",
+						"67592f6cd644fde326edcaa3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
