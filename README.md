@@ -1,6 +1,6 @@
 # ACME Device Sensor Dashboard
 
-ACME Device Sensor Dashboard is a web application to manage, monitor, and visualize real-time device sensor data. This application allows users to add, edit, delete, search, and monitor devices and their sensors.
+ACME Device Sensor Dashboard demonstrates an IoT platform with REST API functionality, a web dashboard for monitoring devices, a web application to add, update and delete devices or sensors and a simulator for generating IoT device data. 
 
 ## Table of Contents
 - [Features](#features)
